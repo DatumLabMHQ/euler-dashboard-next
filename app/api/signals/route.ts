@@ -20,9 +20,9 @@ export async function GET() {
     return NextResponse.json(payload, {
       headers: { "Cache-Control": "public, s-maxage=300, stale-while-revalidate=600" },
     })
-  } catch (e: any) {
+  } catch (e: unknown) {
     return NextResponse.json(
-      { protocol: "euler-v2", fetchedAt: Math.floor(Date.now() / 1000), metrics: [], error: e?.message ?? "failed" },
+      { protocol: "euler-v2", fetchedAt: Math.floor(Date.now() / 1000), metrics: [], error: e instanceof Error ? e.message : "failed" },
       { status: 503 },
     )
   }
