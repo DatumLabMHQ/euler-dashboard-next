@@ -50,6 +50,9 @@ export const config = {
   nav: [
     { href: '/', label: 'Overview' },
     { href: '/markets', label: 'Markets' },
+    { href: '/book', label: 'Loan book' },
+    { href: '/eulerswap', label: 'EulerSwap' },
+    { href: '/eul', label: 'EUL' },
     { href: '/methodology', label: 'Methodology' },
   ],
   // Shown on the methodology page. Keep them honest: what is read, how often, what it excludes.
