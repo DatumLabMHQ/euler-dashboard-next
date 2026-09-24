@@ -1,3 +1,19 @@
+# Euler Research Terminal
+
+The Euler V2 research terminal, rebuilt on
+[datum-databuild-kit](https://github.com/DatumLabMHQ/datum-databuild-kit).
+
+Served at **https://www.datumlab.xyz/euler-terminal**.
+
+The charted read of the book is at `/book` rather than `/markets`, because the kit already
+uses `/markets` for its sortable reserve table.
+
+The overview is open to everyone; every other page is behind the sign-in gate.
+
+Pushing to `master` deploys to production.
+
+---
+
 # Euler V2 Research Terminal
 
 Euler V2 lending vaults, curators and EUL, built by Datum Labs.
