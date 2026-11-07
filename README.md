@@ -35,4 +35,4 @@ npm run dev:platform                   # the platform, key read from ~/.config/d
 npm run check                          # typecheck, lint and build, before a PR
 ```
 
-Deploy: `vercel link --scope datumlabs1 --project euler-dashboard-next`, add `DATUM_API_URL` and `DATUM_API_KEY`, push to main.
+Deploy: Cloudflare Workers via vinext (`cloudflare.config.ts`). `npx cf auth login`, set secrets `DATUM_API_KEY` (and optionally `BEEHIIV_API_KEY`, `BEEHIIV_PUBLICATION_ID`) with `npx cf workers secrets update <NAME> --worker euler-dashboard-next`, then `npm run deploy`.
